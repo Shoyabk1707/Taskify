@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>To-Do</h2>
+      <ul>
+        <li><button data-filter="all">All Tasks</button></li>
+        <li><button data-filter="completed">Completed</button></li>
+        <li><button data-filter="pending">Pending</button></li>
+      </ul>
+      <div class="theme-toggle">
+        <button id="toggle-theme">🌙 Dark Mode</button>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>Task Dashboard</h1>
+        <button id="clear-all">Clear All Tasks</button>
+      </header>
+
+      <!-- Task Form -->
+      <div class="task-form">
+        <input type="text" id="task-title" placeholder="Task Title" required>
+        <input type="text" id="task-description" placeholder="Task Description">
+        <select id="task-category">
+          <option value="Work">Work</option>
+          <option value="Personal">Personal</option>
+          <option value="Other">Other</option>
+        </select>
+        <select id="task-priority">
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <input type="date" id="task-due-date">
+        <button id="add-task">Add Task</button>
+        <button id="voice-input">🎤 Voice Input</button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <!-- Task Grid -->
+      <div class="task-grid" id="task-list"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
