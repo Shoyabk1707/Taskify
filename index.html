@@ -14,8 +14,8 @@
       <h2>To-Do</h2>
       <ul>
         <li><button data-filter="all">All Tasks</button></li>
-        <li><button data-filter="completed">Completed</button></li>
         <li><button data-filter="pending">Pending</button></li>
+        <li><button data-filter="completed">Completed</button></li>
       </ul>
       <div class="theme-toggle">
         <button id="toggle-theme">🌙 Dark Mode</button>
@@ -31,8 +31,14 @@
 
       <!-- Task Form -->
       <div class="task-form">
-        <input type="text" id="task-title" placeholder="Task Title" required>
-        <input type="text" id="task-description" placeholder="Task Description">
+        <div class="input-group">
+          <input type="text" id="task-title" placeholder="Task Title" required>
+          <!-- <button class="voice-input-button" data-for="task-title">🎤</button> -->
+        </div>
+        <div class="input-group">
+          <input type="text" id="task-description" placeholder="Task Description">
+          <!-- <button class="voice-input-button" data-for="task-description">🎤</button> -->
+        </div>
         <select id="task-category">
           <option value="Work">Work</option>
           <option value="Personal">Personal</option>
