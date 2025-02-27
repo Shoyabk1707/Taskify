@@ -21,7 +21,7 @@ An advanced to-do list app with voice input, customizable filters, and essential
     ```sh
    cd Taskify
 3. Open index.html in your browser
-4. Or you can visit the live version: (Taskeefy)[https://taskeefy.netlify.app/]
+4. Or you can visit the live version: [Taskeefy](https://taskeefy.netlify.app/)
 
 ## Usage
 - Add tasks using the input field or voice command.
